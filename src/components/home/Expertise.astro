@@ -2,39 +2,39 @@
 const features = [
   {
     id: 'expertise-1',
-    name: 'Digital Experience Platforms',
+    name: 'Izrada Prije Neviđenog Fitness Programa',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Stvaranje programa za vaše nove članove. Program će uključivati personalizovani nutricionistički plan, trenera zaduženog za postizanje ciljeva članova, i zajednicu gdje vaši članovi mogu dijeliti svoje rezultate.',
   },
   {
     id: 'expertise-2',
-    name: 'Web & Mobile Development',
+    name: 'Digitalni Marketing',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Od kreiranja scenarija do samog snimanja reklama za vaše ponude. Uz pomoć meta oglašavanja, doći ćete do kupaca koje interesuje fitnes i koji imaju novac da kupe vašu ponudu.',
   },
   {
     id: 'expertise-3',
-    name: 'Serverless Computing Platforms',
+    name: 'Kreiranje Short-Form Contenta',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Snimanje kratkih video klipova (TikTok, Instagram Reels, Facebook Reels) o temama koje vi i vaš tim najbolje razumijete u svijetu fitnesa. Cilj ovih kampanja je da privuče što više Gen-Z članova.',
   },
   {
     id: 'expertise-4',
-    name: 'Build & Test Automation Tools',
+    name: 'Izrada Digitalnog Portfolija',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Web stranica koja će biti vaš digitalni portfolio svih vaših uspjeha kroz godine poslovanja i mjesto gdje potencijalni klijenti mogu saznati sve o vašim uslugama i vašoj teretani.',
   },
   {
     id: 'expertise-5',
-    name: 'Artificial Intelligence',
+    name: 'Kreiranje Prodajnog Sistema',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Uspostavljanje alata kao što su CRM, softver za zakazivanje, i sistemi za njegu klijenata, detaljne prodajne skripte i odgovori na sva pitanja klijenata kako biste povećali prodaju članarina.',
   },
   {
     id: 'expertise-6',
-    name: 'Full project support',
+    name: 'Kreiranje Aktivne Zajednice',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Oživite iskustvo vaših članova dizajniranjem nove zajednice gdje se vaši članovi mogu družiti, pokazivati svoje rezultate, i sve nove i ekskluzivne promocije imati na dohvat ruke.',
   },
 ];
 ---
@@ -42,7 +42,7 @@ const features = [
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="grid gap-12 lg:grid-cols-3 lg:gap-8">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Expertise</h2>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Naše usluge</h2>
       <div class="lg:col-span-2">
         <dl
           class="-mt-3"
@@ -68,11 +68,11 @@ const features = [
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
-                    <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
+                    <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                       <span class="font-medium">{feature.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
-                          class="text-primary-600 dark:text-primary-400 h-6 w-6 rotate-0 transform transition duration-200 ease-in-out"
+                          class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
                           x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const features = [
                   </button>
                 </dt>
                 <dd class="pb-6 pr-6" id={feature.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
                     {feature.description}
                   </p>
                 </dd>
